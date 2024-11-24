@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('img.jpg');
+    background-size: cover;
+}
+.wrapper{
+    width: 370px;
+    border-radius: 7px;
+    padding: 25px 30px;
+    background-color: white;
+}
+.wrapper header{
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+}
+.wrapper form{
+    margin: 35px 20px;
+}
+form .row{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+form .row label{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+form :where(input, select, button){
+    outline-style: none;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+}
+form .row input{
+    resize: none;
+    height: 40px;
+    padding: 8px 25px;
+    font-size: 15px;
+    border: 1px solid #999;
+}
+form .row .outer{
+    height: 47px;
+    display: flex;
+    padding: 0 10px;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid #999;
+}
+form .row select{
+    font-size: 14px;
+}
+form button{
+    height: 52px;
+    margin-top: 10px;
+    background-color: #5256AD;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+}
+
